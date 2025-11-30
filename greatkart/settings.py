@@ -85,6 +85,19 @@ DATABASES = {
     }
 }
 
+# settings.py
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'greatkart_ecommerce_application',
+#         'USER': 'postgres',
+#         'PASSWORD': 'tushar2909',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -130,10 +143,7 @@ STATICFILES_DIRS = [
 ]
 
 
-# STATIC_URL = '/static/'
-# # Where collectstatic will put all static files
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# # Additional directories to look for static files
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'greatkart/static'),
-# ]
+#media files configurations
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR /'media'
+
