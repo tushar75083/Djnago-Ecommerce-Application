@@ -1,8 +1,8 @@
-# from django.http import HttpResponse
 from django.shortcuts import render
 
-# def home(request):
-#     return HttpResponse("welcome to greatkart....")
+from store.models import Product
 
 def home(request):
-    return render(request,'home.html')
+    products = Product.objects.all().filter(is_available = True)
+    context = {'products':products}
+    return render(request,'home.html',context)
