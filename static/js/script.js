@@ -58,3 +58,9 @@ $(document).ready(function() {
 }); 
 // jquery end
 
+// not working for me as used in registration 8.40 hours
+setTimeout(function(){
+    $('#message').fadeOut('slow')
+}, 4000 )
+
+
