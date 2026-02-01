@@ -1,0 +1,100 @@
+
+/* hide radio btn */
+/* .rate > input{
+    display: none;
+}
+
+.rate{
+    display: inline-block;
+    border: 0;
+}
+
+.rate > label{
+    float: right;
+} */
+
+/* showing star */
+/* .rate > label:before{
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: FontAwesome;
+    content: "\f005";
+    margin: 0;
+    padding: 0.3rem .2rem;
+    cursor: pointer;
+
+}
+
+.rate .half:before{
+    content: "\f089";
+    position: absolute;
+    padding-right: 0;
+} */
+
+
+/* click and hover */
+/* input:checked ~ label:hover ~ label{
+    color: #ffb503;
+}
+
+/* highlight hover */
+/* input:checked + label:hover, input:checked ~ label:hover, input:checked ~ label:hover ~ label,
+label:hover ~ input:checked ~ label{
+    color: #cc9000;
+} */
+
+
+/* ============ */
+
+/* hide radio btn */
+ .rate > input{
+    display: none;
+}
+
+.rate{
+    display: inline-block;
+    border: 0;
+}
+
+.rate > label{
+    float: right;
+    color: #000;
+}
+
+/* showing star */
+.rate > label:before{
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: FontAwesome;
+    content: "\f005";
+    margin: 0;
+    padding: 0.3rem .2rem;
+    cursor: pointer;
+}
+
+.rate .half:before{
+    content: "\f089";
+    position: absolute;
+}
+
+/* ⭐ KEEP selected stars highlighted */
+.rate > input:checked ~ label {
+    color: #ffb503;
+}
+
+/* hover effect */
+.rate > label:hover,
+.rate > label:hover ~ label {
+    color: #ffb503;
+}
+
+/* hover when already selected */
+.rate > input:checked + label:hover,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label {
+    color: #cc9000;
+}
+
+.rating-star i{
+    color: #cc9000 !important;
+}
